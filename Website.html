@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewpport" content="width=device-width,initial-scale=1">
+        <title>
+            AyaAya
+        </title>
+        <link rel="stylesheet"  href="style.css">
+    </head>
+    <body>
+            <div class="homepage">
+                <nav>
+                    <ul>
+                        <div class="logo">
+                            <p class="logo1">Aya</p>
+                            <p class="logo2">Aya</p>
+                            <br>
+                        
+                        <li><a href="#section4">Contacts</a></li>
+                        <li><a href="#section3">Services</a></li>
+                        <li><a href="#section2">About</a></li>
+                        <li><a href="#section1">Home</a></li>
+                    </div>
+                    
+                    </ul>
+                </nav>
+                <div class="section1" id="section1">
+                        
+                <p class="Head1" >Welcome</p>
+                <img class="Profilepic" src="IMG_20240322_154030.jpg" alt="">
+                
+                <p class="intro">Hello there, I Am Ellah Mhay A. Belono-ac, a 
+                    CCS Student at Jose Rizal memorial State University 
+                Katipunan Campus,I am also the developer and the designer of the AyaAya website.</p>
+                <p class="intro1"> Hello There, <br>My name is Ellah Mhay A. Belono-ac</p>
+                <p class="intro2">a 
+                    CCS Student at Jose Rizal memorial State University 
+                Katipunan Campus </p>
+                <p class="intro3">The developer and the designer of the AyaAya website. <br>Please Enjoy</p>
+                
+                </div>
+            </div>
+        </section>
+    <section class="second" id="section2">
+        <div class="second_entry">
+        <p class="Abouthead">About</p>
+        <button class="Gallery" id="Gallery" onclick="showgallery()+hideinfo()+hidehobbie()">Gallery</button>
+        <button class="Info" id="Info" onclick="remove()+showinfo()+hidehobbie()">Info</button>
+        <button class="hobbies" id="hobbies" onclick="hideinfo()+remove()+showhobbie()">Hobbies</button>
+
+        <div class="gallerypage" id="gallerypage">
+            <div class="gallery" >
+                <img class="img1" src="1e781641-b43d-453e-bf3e-ab3b542b537b.jpg" alt="">
+                <img class="img2" src="3e4484fe-6fe6-429a-978e-aa50b463575c.jpg" alt="">
+                <img class="img3" src="44a452b3-6dc0-4d90-9d8e-5c2aa19dc11d.jpg" alt=""><br>
+                <img class="img4" src="5aff47ea-3a34-4a98-ad23-297409da82dc.jpg" alt="">
+                <img class="img5" src="da704ec1-e15e-4c91-9356-f946579aa450.jpg" alt="">
+                <img class="img6" src="cb037400-eb64-4195-9a22-973ca3087911.jpg" alt=""><br>
+                <img class="img7" src="9d79a93d-425c-4806-8326-87dfd360ab74.jpg" alt="">
+                <img class="img8" src="799f6767-3e6a-4ef7-b36c-85554a9e34bd.jpg" alt="">
+                <img class="img9" src="a1c6de21-bd40-479d-8ec8-a0f39ef4ae7a.jpg" alt=""><br>
+                <img class="img10" src="ca72c5e0-7a17-44ab-9ad7-f6857918d076.jpg" alt="">
+                <img class="img11" src="d7ec1945-b7ae-4e00-9e08-a8f35613379a.jpg" alt="">
+                <img class="img12" src="ee062297-05ea-45ad-a202-e6995e06bd4a.jpg" alt="">
+                <p>. . . End . . .</p>
+            </div>
+        </div>
+        <div class="infopage" id="infopage">
+            <div class="introduction">
+                <p>Hello, here's some information about me. 
+                I'm Ellah Mhay A. Belono-ac, 
+                a 19-year-old student at Jose Rizal 
+                Memorial State University Katipunan 
+                Campus pursuing a Bachelor of Science 
+                in Computer Science degree.
+                 I graduated from Punta National High 
+                 School in Punta, Dipolog City. 
+                 I am the middle child with two sisters. 
+                 My mother is a housewife, 
+                 and my father is a driver. 
+                 We dwell in Dr. Jose Rizal Katipunan, 
+                 Zamboanga del Norte. 
+                 My hobbies include playing sports, 
+                 listening to music, dancing, 
+                 and watching Korean dramas. 
+                 That is all the information 
+                 I want to share with you right now. </p>
+            </div>
+            
+        </div>
+        <div class="hobbie" id="hobbiepage">
+            <p class=" titles">Sports</p>
+            <p class="mini">Sepak Takraw <br>
+            Badminton</p>
+        </div>
+    </div>
+    </section>
+    <section class="third" id="section3">
+asdwdw
+    </section>
+    <section class="forth" id="section4">
+        <div class="contact1">
+            <div class="contact_msg">
+                Im always here to help you
+            </div>
+            <br>
+            <div class="contact_me">
+                Contact me
+            </div>
+        </div>
+        <div class="c">
+            <img src="png-transparent-messenger-facebook-messenger-messenger-logo-social-media-icon-thumbnail.png" alt="" >
+            <img src="Instagram_icon.png.webp" alt="">
+            <img src="png-clipart-twitter-twitter-thumbnail.png" alt="">
+            <img src="snapchat-icon-2048x2048-nvxoke41.png" alt="">
+        </div>
+    </section>
+    </body>
+
+    <script>
+        let q = document.getElementById("gallerypage");
+        function showgallery(){
+            q.classList.remove("showpage")
+        }
+        function remove(){
+            q.classList.add("showpage")
+        }
+        let w = document.getElementById("infopage");
+        function showinfo(){
+            w.classList.add("showpage1")
+        }
+        function hideinfo(){
+            w.classList.remove("showpage1")
+        }
+        let e = document.getElementById("hobbiepage");
+        function showhobbie(){
+            e.classList.add("showpage10")
+        }
+        function hidehobbie(){
+            e.classList.remove("showpage10")
+        }
+        
+
+    </script>
+</html>
