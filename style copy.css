@@ -125,6 +125,7 @@ a:focus{
 .logo2{
     color: white;
     float: left;
+    text-shadow: 10px 2px red;
     animation: logo;
     animation-duration: 3s;
     animation-iteration-count: infinite;
@@ -249,14 +250,19 @@ a:focus{
     font-size:100px;
     color: white;
 }
-.second_entry{
-    position: relative;top: 200px;
-}
+
+
 .second button{
     font-size: 50px;
     margin: 20px;
     border-radius: 20%;
     width: 20%;
+    background-color: transparent;
+    color: white;
+    border-width: 5px;
+    border-color: aqua;
+    height: 100px;
+    width: 250px;
     
 }
 .gallery img{
@@ -265,20 +271,22 @@ a:focus{
     object-fit: cover;
     border-style: solid;
     border-width: 5px;
-    border-color:white;
+    border-color:white;margin: 15px;
 }
 .infopage{
-    visibility:hidden;
+    
     font-size: 20px;
-    position: relative;bottom: 700px;
 }
 .showpage1{
-    visibility: visible;
+    visibility: hidden;
+}
+.ee{
+    visibility: hidden;
 }
 
 .introduction{
     width: 100%px;
-    height: 500px;
+    height: 800px;
     line-height: 3em;
     overflow-y: scroll;
     padding: 5px;
@@ -287,7 +295,7 @@ a:focus{
 .introduction p{
     color: white;
     font-size: 50px;
-    
+    line-height: 1.6;
 }
 
 
@@ -300,14 +308,31 @@ a:focus{
     visibility: visible;
 
 }
-.hobbie{
-    position: relative;bottom: 1200px;
-}
+
 .titles{
-    font-size: 75px;
+    width: 100%;
+    height: 1200px;
+    overflow-y: scroll;
+    position: relative;bottom: 150px;
+}
+.titles img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-style: solid;
+    border-width: 5px;
+    border-color:white;margin: 15px;
+}
+.pic12{
+    position: relative;top: 100px;
+}
+.Sp1{
     color: white;
-    size: 100%;
-    float: left;
+    font-size: 100px;
+}
+.Sp2{
+    color: white;
+    font-size: 100px;
 
 }
 .mini{
@@ -321,6 +346,7 @@ a:focus{
 .contact_msg{
     color: white;
     font-size: 75px;
+    text-align: center;
 
 }
 .contact_me{
@@ -352,7 +378,29 @@ a:focus{
     border-radius: 50%;
     margin: 30px;
 }
+.gallery_title{
+    color: white;
+    font-size: 100px;
+    position: relative;top: 350px;
+}
+.gallery{
+    width: 900px;
+    height: 900px;
+    line-height: 3em;
+    overflow: scroll;
+    padding: 5px;
+    position: relative;top: 400px;
+}
+.hobbie{
+    position: relative;bottom: 600px;
+    
+}
 
+@media only screen and (min-device-width:150px) and (max-device-width:236px){
+    .nav_btn{
+        position: relative;left: 195px;
+    }
+}
 
 @media only screen  and (min-width:1024px){
     body{
@@ -360,6 +408,9 @@ a:focus{
         background-image: none;
         overflow-x: hidden;
 
+    }
+    html{
+        scroll-behavior: smooth;
     }
     .logo1{
         font-size: 35px;
@@ -372,10 +423,12 @@ a:focus{
         text-shadow: 3px 2px red;
     }
     #section3{
-        position: relative;bottom:1000px;
+        position: relative;bottom:1500px;
+        background-image: url(abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.avif);
     }
     #section4{
-        position: relative;bottom: 900px;
+        position: relative;bottom: 1400px;
+        background-image: url(abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.avif);
     }
 
     #section1{
@@ -386,8 +439,11 @@ a:focus{
         text-align: center;
         justify-content: center;
         align-items: center;
-        height: 50%;
+        position: relative;top: 200px;
 
+    }
+    .hobbie{
+        position: relative;bottom: 700px;
     }
 
     .Head1{
@@ -402,10 +458,8 @@ a:focus{
     .intro1{
         position: relative;bottom: 1500px;
     }
-    .second
-    a{
-        position: relative;left: 220px;
-    }
+    
+    
    
     nav{
         height: 100px;
@@ -520,11 +574,12 @@ a:focus{
     .introduction{
         
         position: relative;bottom: 100px;
-        overflow: hidden;
+        overflow: visible;
 
     }
     .introduction p {
         font-size: 25px;
+        position: relative;bottom: 200px;
     }
     .second button{
         font-size: 25px;
@@ -537,6 +592,7 @@ a:focus{
         border-style: solid;
         border-color: aqua;
         cursor: pointer;
+        height: auto;
     }
     .gallerypage{
         position: relative;bottom: 350px;   
@@ -552,9 +608,9 @@ a:focus{
     .gallery{ 
         scale: .8;
         height: 550px;
-        width: 1200px;
+        width: auto;
         overflow-x: hidden;
-
+        position: relative;top: 100px;
 
     }
     .gallery br{
@@ -564,6 +620,7 @@ a:focus{
         margin-left: 10px;
         margin-right: 20px;
         margin-bottom: 25px;
+        object-fit: contain;
 
     }
     .contact_msg{
@@ -585,7 +642,7 @@ a:focus{
     
     #section2{
         background-image: url(abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980.avif);
-        position: relative;bottom: 500px;
+        position: relative;bottom: 700px;
     }
     
     .nav_btn li{
@@ -593,5 +650,30 @@ a:focus{
     }
     .navbar{
         visibility: hidden;
+    }
+    .gallery_title{
+        position: relative;top: 150px;
+    }
+    .hobbie{
+        position: relative;bottom: 950px;
+    }
+    .titles{
+        height: 50%;
+        overflow: hidden;
+
+    }
+    .titles img{
+        width: 150px;
+        height: 150px;
+    }
+    .Sp1{
+        font-size: 50px;
+    }
+    .Sp2{
+        font-size: 50px;
+
+    }
+    .pic12{
+        position: relative;top: -15px;
     }
 }
