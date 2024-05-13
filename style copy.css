@@ -7,10 +7,7 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    background-image: url(abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-9980\ -\ Copy.avif);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+    background-color: black;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -46,7 +43,6 @@ ul{
 .nav_btn{
     font-size: 50px;
     float: right;
-    margin-left: 20px;
     position: relative;bottom: 230px;
     width: 20%;
     background-color: transparent;
@@ -268,7 +264,7 @@ a:focus{
 .gallery img{
     width: 250px;
     height: 250px;
-    object-fit: cover;
+    object-fit: contain;
     border-style: solid;
     border-width: 5px;
     border-color:white;margin: 15px;
@@ -396,7 +392,7 @@ a:focus{
     
 }
 
-@media only screen and (min-device-width:150px) and (max-device-width:236px){
+@media only screen and (min-device-width:10px) and (max-device-width:236px){
     .nav_btn{
         position: relative;left: 195px;
     }
